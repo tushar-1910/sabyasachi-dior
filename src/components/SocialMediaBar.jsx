@@ -1,5 +1,5 @@
 import { Flex, Icon, Link, Tooltip } from '@chakra-ui/react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaSnapchat } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -9,11 +9,6 @@ export default function Footer() {
           <Icon as={FaFacebook} boxSize={6} color="yellow.600" />
         </Link>
       </Tooltip>
-      <Tooltip label="Twitter">
-        <Link href="#" isExternal mx={2}>
-          <Icon as={FaTwitter} boxSize={6} color="yellow.600" />
-        </Link>
-      </Tooltip>
       <Tooltip label="Instagram">
         <Link href="#" isExternal mx={2}>
           <Icon as={FaInstagram} boxSize={6} color="yellow.600" />
@@ -21,7 +16,7 @@ export default function Footer() {
       </Tooltip>
       <Tooltip label="LinkedIn">
         <Link href="#" isExternal mx={2}>
-          <Icon as={FaLinkedin} boxSize={6} color="yellow.600" />
+          <Icon as={FaSnapchat} boxSize={6} color="yellow.600" />
         </Link>
       </Tooltip>
     </Flex>
