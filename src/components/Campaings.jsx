@@ -96,7 +96,7 @@ export default function Campaigns() {
           <ModalHeader>Campaign 2</ModalHeader>
           <ModalBody>
             <Box p={4} fontSize="25px">
-              A tour organized for women to gracefully explore new ground
+              A tour organized for women to gracefully explore new grounds
             </Box>
           </ModalBody>
         </ModalContent>
@@ -130,7 +130,7 @@ export default function Campaigns() {
           <ModalHeader>Campaign 4</ModalHeader>
           <ModalBody>
             <Box p={4} fontSize="25px">
-              An Instagram filter of the sunglasses to try it on before buy
+              An Instagram filter of the sunglasses to try it on before buying
             </Box>
           </ModalBody>
         </ModalContent>
