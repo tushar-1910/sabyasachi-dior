@@ -14,7 +14,7 @@ export default function Footer() {
           <Icon as={FaInstagram} boxSize={6} color="yellow.600" />
         </Link>
       </Tooltip>
-      <Tooltip label="LinkedIn">
+      <Tooltip label="Snapchat Filter">
         <Link href="#" isExternal mx={2}>
           <Icon as={FaSnapchat} boxSize={6} color="yellow.600" />
         </Link>

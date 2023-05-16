@@ -54,16 +54,16 @@ export default function Campaigns() {
         </MenuButton>
         <MenuList bg="black" border="none">
           <MenuItem onClick={onOpenModal1} bg="black" color="white">
-            Contact
+            Launch Event
           </MenuItem>
           <MenuItem onClick={onOpenModal2} bg="black" color="white">
-            Contact
+            Tour
           </MenuItem>
           <MenuItem onClick={onOpenModal3} bg="black" color="white">
-            Contact
+            Race
           </MenuItem>
           <MenuItem onClick={onOpenModal4} bg="black" color="white">
-            Contact
+            Filter
           </MenuItem>
         </MenuList>
       </Menu>
@@ -72,19 +72,16 @@ export default function Campaigns() {
         isOpen={isOpenModal1}
         onClose={onCloseModal1}
         overlayColor="rgba(0, 0, 0, 0.8)"
+        isCentered
       >
         <ModalOverlay />
         <ModalContent bg="black" color="white">
-          <ModalHeader>Modal</ModalHeader>
-          <ModalCloseButton />
+          <ModalHeader>Campaign 1</ModalHeader>
           <ModalBody>
-            <Box p={4}>Modal content goes here.</Box>
+            <Box p={4} fontSize="25px">
+              Launch event with The Brand ambassador
+            </Box>
           </ModalBody>
-          <ModalFooter>
-            <Button colorScheme="blue" onClick={onCloseModal1}>
-              Close
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
 
@@ -92,19 +89,16 @@ export default function Campaigns() {
         isOpen={isOpenModal2}
         onClose={onCloseModal2}
         overlayColor="rgba(0, 0, 0, 0.8)"
+        isCentered
       >
         <ModalOverlay />
         <ModalContent bg="black" color="white">
-          <ModalHeader>Modal 2</ModalHeader>
-          <ModalCloseButton />
+          <ModalHeader>Campaign 2</ModalHeader>
           <ModalBody>
-            <Box p={4}>Content of Modal 2</Box>
+            <Box p={4} fontSize="25px">
+              A tour organized for women to gracefully explore new ground
+            </Box>
           </ModalBody>
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onCloseModal2}>
-              Close
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
 
@@ -112,19 +106,16 @@ export default function Campaigns() {
         isOpen={isOpenModal3}
         onClose={onCloseModal3}
         overlayColor="rgba(0, 0, 0, 0.8)"
+        isCentered
       >
         <ModalOverlay />
         <ModalContent bg="black" color="white">
-          <ModalHeader>Modal 3</ModalHeader>
-          <ModalCloseButton />
+          <ModalHeader>Campaign 3</ModalHeader>
           <ModalBody>
-            <Box p={4}>Content of Modal 3</Box>
+            <Box p={4} fontSize="25px">
+              An exclusive race Adventure hosted by Rannvijay Sinha
+            </Box>
           </ModalBody>
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onCloseModal3}>
-              Close
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
 
@@ -132,19 +123,16 @@ export default function Campaigns() {
         isOpen={isOpenModal4}
         onClose={onCloseModal4}
         overlayColor="rgba(0, 0, 0, 0.8)"
+        isCentered
       >
         <ModalOverlay />
         <ModalContent bg="black" color="white">
-          <ModalHeader>Modal 4</ModalHeader>
-          <ModalCloseButton />
+          <ModalHeader>Campaign 4</ModalHeader>
           <ModalBody>
-            <Box p={4}>Content of Modal 4</Box>
+            <Box p={4} fontSize="25px">
+              An Instagram filter of the sunglasses to try it on before buy
+            </Box>
           </ModalBody>
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onCloseModal4}>
-              Close
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </Box>

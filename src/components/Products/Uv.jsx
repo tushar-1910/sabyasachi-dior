@@ -52,6 +52,14 @@ export default function Uv() {
             <Button mt={4} bg="black" color="white" fontSize="xl">
               Price: 30000/- INR
             </Button>
+            <Text
+              textAlign="center"
+              mt={2}
+              color="black"
+              fontSize="10px"
+            >
+              Prices may vary*
+            </Text>
           </Flex>
         </Flex>
       </Box>
