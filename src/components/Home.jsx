@@ -14,10 +14,9 @@ export default function Home() {
       pt="25vh"
       className='bg'
     >
-      <Box bg="rgba(255, 255, 255, 0.8)" ml={20} mr={20}>
+      <Box bg="rgba(0, 0, 0, 0.8)" ml={20} mr={20}>
         <Flex pt={4} alignItems="center" p={30}>
-          <Image src={home} width="30vw" height="30vh" ml="50" />
-          <Text ml={200} p={10}  color="black" fontSize="25px">
+          <Text mr={150} p={10}  color="white" fontSize="25px">
             TharVision is a sport sunglasses brand. The name combines the rugged
             and adventurous spirit of the Mahindra Thar with the idea of clear,
             sharp vision needed for outdoor sports. It also incorporates the
@@ -26,6 +25,7 @@ export default function Home() {
             provide high-quality eyewear designed for adventure and optimal
             vision.
           </Text>
+          <Image src={home} width="30vw" height="30vh" mr="50" />
         </Flex>
       </Box>
     </Box>

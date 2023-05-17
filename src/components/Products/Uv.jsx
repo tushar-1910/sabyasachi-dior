@@ -14,7 +14,7 @@ export default function Uv() {
       minH="100vh"
       pt="20vh"
     >
-      <Box bg="rgba(255, 255, 255, 0.8)" m="auto" width={1300}>
+      <Box bg="rgba(0, 0, 0, 0.8)" m="auto" width={1300}>
         <Flex pt={4} alignItems="center" p={30}>
           <Carousel
             showStatus={false}
@@ -38,24 +38,24 @@ export default function Uv() {
             justifyContent="center"
             flexDirection="column"
           >
-            <Heading textAlign="center">UV Ray Protected Sunglasses</Heading>
+            <Heading color='white' textAlign="center">UV Ray Protected Sunglasses</Heading>
             <Text
               mt={4}
               textAlign="center"
               p={10}
-              color="black"
+              color="white"
               fontSize="25px"
             >
               Will protect you from harmful UV rays while having a free
               adventure exploration.
             </Text>
-            <Button mt={4} bg="black" color="white" fontSize="xl">
+            <Button mt={4} bg="white" color="black" fontSize="xl">
               Price: 30000/- INR
             </Button>
             <Text
               textAlign="center"
               mt={2}
-              color="black"
+              color="white"
               fontSize="10px"
             >
               Prices may vary*

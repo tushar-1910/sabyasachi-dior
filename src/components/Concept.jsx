@@ -30,12 +30,12 @@ export default function Concept() {
       pt="25vh"
       className="bg"
     >
-      <Box bg="rgba(255, 255, 255, 0.8)" ml={20} mr={20}>
+      <Box bg="rgba(0, 0, 0, 0.8)" ml={20} mr={20}>
         <Flex pt={4} alignItems="center" flexDirection='column' p={30}>
-          <Heading as="h1" size="xl" color="black" textAlign="center">
+          <Heading as="h1" size="xl" color="white" textAlign="center">
             THAR Vision
           </Heading>
-          <Text p={10} color="black" fontSize="25px">
+          <Text p={10} color="white" fontSize="25px">
             Thar Vision is a proposed brand extension of Mahindra Thar that aims
             to offer a unique range of sport sunglasses to adventure
             enthusiasts, athletes, and outdoor enthusiasts. The sunglasses will

@@ -14,7 +14,7 @@ export default function Dust() {
       minH="100vh"
       pt="20vh"
     >
-      <Box bg="rgba(255, 255, 255, 0.8)" m="auto" width={1300}>
+      <Box bg="rgba(0, 0, 0, 0.8)" m="auto" width={1300}>
         <Flex pt={4} alignItems="center" p={30}>
           <Carousel
             showStatus={false}
@@ -38,24 +38,24 @@ export default function Dust() {
             justifyContent="center"
             flexDirection="column"
           >
-            <Heading textAlign="center">Dust Protection Sunglasses</Heading>
+            <Heading color='white' textAlign="center">Dust Protection Sunglasses</Heading>
             <Text
               mt={4}
               textAlign="center"
               p={10}
-              color="black"
+              color="white"
               fontSize="25px"
             >
               Will protect from dust while off roadings so you don't have to
               sneeze all day.
             </Text>
-            <Button mt={4} bg="black" color="white" fontSize="xl">
+            <Button mt={4} bg="white" color="black" fontSize="xl">
               Price: 30000/- INR
             </Button>
             <Text
               textAlign="center"
               mt={2}
-              color="black"
+              color="white"
               fontSize="10px"
             >
               Prices may vary*
