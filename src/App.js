@@ -5,10 +5,8 @@ import Navbar from './components/Navbar';
 import Concept from './components/Concept';
 import Home from './components/Home';
 import './App.css';
-import Uv from './components/Products/Uv';
-import Dust from './components/Products/Dust';
-import Night from './components/Products/Night';
-import Footer from './components/SocialMediaBar';
+import Location from './components/Products/Location';
+import Itinerary from './components/Products/Itinerary';
 
 function App() {
   return (
@@ -16,12 +14,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/concept" element={<Concept />}></Route>
-        <Route path="/uv" element={<Uv />} />
-        <Route path="/dust" element={<Dust />} />
-        <Route path="/night" element={<Night />} />
+        <Route path="/Concept" element={<Concept />}></Route>
+        <Route path="/Location" element={<Location />} />
+        <Route path="/Itinerary" element={<Itinerary />} />
       </Routes>
-      <Footer />
     </ChakraProvider>
   );
 }

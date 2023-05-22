@@ -1,55 +1,70 @@
-import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import React from 'react';
+import {
+  Box,
+  Flex,
+  Image,
+  Text,
+  Heading,
+  VStack,
+  useBreakpointValue,
+} from '@chakra-ui/react';
+import concept from './concept.png';
 import background from './background.png';
+
 export default function Concept() {
   return (
-    // <Box bgImage={background} bgSize="cover" bgRepeat="no-repeat" minH="100vh" pt={100} >
-    //   <Box maxW="800px" bg="black" mx="auto" py={8} px={4}>
-    //     <Heading as="h1" size="xl" color='white' textAlign="center" mb={8}>
-    //       THAR Vision
-    //     </Heading>
-    //     <Text fontSize="xl" lineHeight="tall" color='white' p='10px'>
-    //       Thar Vision is a proposed brand extension of Mahindra Thar that aims
-    //       to offer a unique range of sport sunglasses to adventure enthusiasts,
-    //       athletes, and outdoor enthusiasts. The sunglasses will be designed to
-    //       provide superior optical performance and enhanced durability, making
-    //       them perfect for all outdoor activities. Thar Vision is an exciting
-    //       brand extension of Mahindra Thar that has the potential to become a
-    //       leading brand in the sport sunglass market. With its focus on quality,
-    //       durability, and performance, Thar Vision will appeal to adventure
-    //       enthusiasts and outdoor enthusiasts looking for high-quality
-    //       sunglasses that can withstand the rigors of their chosen activity.
-    //     </Text>
-    //   </Box>
-    // </Box>
-    <Box
-      bgImage={background}
-      bgSize="cover"
-      bgRepeat="no-repeat"
-      minH="100vh"
-      pt="25vh"
-      className="bg"
+    <Flex
+      w={'full'}
+      h={'100vh'}
+      backgroundImage={`url(${background})`}
+      backgroundSize={'cover'}
+      backgroundPosition={'center center'}
     >
-      <Box bg="rgba(0, 0, 0, 0.8)" ml={20} mr={20}>
-        <Flex pt={4} alignItems="center" flexDirection='column' p={30}>
-          <Heading as="h1" size="xl" color="white" textAlign="center">
-            THAR Vision
-          </Heading>
-          <Text p={10} color="white" fontSize="25px">
-            Thar Vision is a proposed brand extension of Mahindra Thar that aims
-            to offer a unique range of sport sunglasses to adventure
-            enthusiasts, athletes, and outdoor enthusiasts. The sunglasses will
-            be designed to provide superior optical performance and enhanced
-            durability, making them perfect for all outdoor activities. Thar
-            Vision is an exciting brand extension of Mahindra Thar that has the
-            potential to become a leading brand in the sport sunglass market.
-            With its focus on quality, durability, and performance, Thar Vision
-            will appeal to adventure enthusiasts and outdoor enthusiasts looking
-            for high-quality sunglasses that can withstand the rigors of their
-            chosen activity.
-          </Text>
+      <VStack
+        w={'full'}
+        justifyContent={'center'}
+        alignItems={'center'}
+        px={useBreakpointValue({ base: 4, md: 8 })}
+      >
+        <Flex
+          bg="rgba(0, 0, 0, 0.8)"
+          maxW="80%"
+          maxH="80%"
+          align={'flex-start'}
+          spacing={6}
+        >
+          <Image src={concept} boxSize={8} h="100%" w="30vw" mr={2} />
+
+          <Box>
+            <Heading
+              color="white"
+              textAlign={'center'}
+              mt={5}
+              fontWeight={700}
+              fontSize={useBreakpointValue({ base: '10px', md: '3xl' })}
+            >
+              CONCEPT
+            </Heading>
+            <Text
+              color={'white'}
+              p={useBreakpointValue({ base: 5, md: 10 })}
+              fontWeight={500}
+              lineHeight={1.2}
+              fontSize={useBreakpointValue({ base: '10px', md: '2xl' })}
+            >
+              It sounds like a fascinating partnership between two fashion
+              houses, Sabyasachi and Dior, with a focus on contemporary Indian
+              suits for men. Dior is famed for its high-end fashion and luxury
+              goods, while Sabyasachi is noted for its traditional Indian
+              attire. The combination of the traditional components of Indian
+              clothes with the contemporary designs and cuts of Western suits
+              could arise from the collaboration of these two firms. Combining
+              the refinement of Western tailoring with the grace of Indian
+              materials and motifs may be a fascinating mix.
+            </Text>
+          </Box>
         </Flex>
-      </Box>
-    </Box>
+      </VStack>
+    </Flex>
   );
 }

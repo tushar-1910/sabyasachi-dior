@@ -1,33 +1,61 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react';
+import {
+  Flex,
+  Text,
+  Stack,
+  Button,
+  VStack,
+  useBreakpointValue,
+} from '@chakra-ui/react';
 import React from 'react';
-import home from './home.png';
 import background from './background.png';
 import './Home.css';
 
+
 export default function Home() {
   return (
-    <Box
-      bgImage={background}
-      bgSize="cover"
-      bgRepeat="no-repeat"
-      minH="100vh"
-      pt="25vh"
-      className='bg'
+    <Flex
+      w={'full'}
+      h={'100vh'}
+      backgroundImage={`url(${background})`}
+      backgroundSize={'cover'}
+      backgroundPosition={'center center'}
     >
-      <Box bg="rgba(0, 0, 0, 0.8)" ml={20} mr={20}>
-        <Flex pt={4} alignItems="center" p={30}>
-          <Text mr={150} p={10}  color="white" fontSize="25px">
-            TharVision is a sport sunglasses brand. The name combines the rugged
-            and adventurous spirit of the Mahindra Thar with the idea of clear,
-            sharp vision needed for outdoor sports. It also incorporates the
-            concept of "vision," which is essential for any sports person. This
-            name could be a great fit for a sport sunglasses brand that aims to
-            provide high-quality eyewear designed for adventure and optimal
-            vision.
+      <VStack
+        w={'full'}
+        justify={'center'}
+        px={useBreakpointValue({ base: 4, md: 8 })}
+        bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
+      >
+        <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
+          <Text
+            color={'white'}
+            fontWeight={700}
+            lineHeight={1.2}
+            fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}
+          >
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+            eiusmod tempor
           </Text>
-          <Image src={home} width="30vw" height="30vh" mr="50" />
-        </Flex>
-      </Box>
-    </Box>
+          <Stack direction={'row'}>
+            <Button
+              bg={'blue.400'}
+              rounded={'full'}
+              color={'white'}
+              _hover={{ bg: 'blue.500' }}
+            >
+              Show me more
+            </Button>
+            <Button
+              bg={'whiteAlpha.300'}
+              rounded={'full'}
+              color={'white'}
+              _hover={{ bg: 'whiteAlpha.500' }}
+            >
+              Show me more
+            </Button>
+          </Stack>
+        </Stack>
+      </VStack>
+    </Flex>
   );
 }
