@@ -94,7 +94,7 @@ export default function Itinerary() {
     >
       <Box
         position={'relative'}
-        height={'200px'}
+        height={'250px'}
         width={'80%'}
         overflow={'hidden'}
       >
