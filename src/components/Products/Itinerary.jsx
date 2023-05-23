@@ -40,22 +40,16 @@ export default function Itinerary() {
   // This can be static or loaded from a server
   const cards = [
     {
-      title: 'Design Projects 1',
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      text: '',
+      title: 'Speech by Sabyasachi Mukherjee',
       image:
-        'https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+        'https://i.pinimg.com/564x/3e/a5/9d/3ea59d5b71a8670cd2481bcc169866d4.jpg',
     },
     {
-      title: 'Design Projects 2',
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      text: '',
+      title: 'Christian Dior appearing as an AI',
       image:
-        'https://images.unsplash.com/photo-1438183972690-6d4658e3290e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2274&q=80',
-    },
-    {
-      title: 'Design Projects 3',
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
-      image:
-        'https://images.unsplash.com/photo-1507237998874-b4d52d1dd655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+        'https://i.pinimg.com/564x/b9/63/b0/b963b025de2e1a92ce3a87c2e256abf9.jpg',
     },
   ];
   return (
@@ -115,33 +109,22 @@ export default function Itinerary() {
         {/* Slider */}
         <Slider {...settings} ref={slider => setSlider(slider)}>
           {cards.map((card, index) => (
-            <Box
-              key={index}
-              height={'6xl'}
-              position="relative"
-              backgroundPosition="center"
-              backgroundRepeat="no-repeat"
-              backgroundSize="cover"
-              backgroundImage={`url(${card.image})`}
-            >
-              {/* This is the block you need to change, to customize the caption */}
-              <Container size="container.lg" height="600px" position="relative">
-                <Stack
-                  spacing={6}
-                  w={'full'}
-                  maxW={'lg'}
-                  position="absolute"
-                  top="50%"
-                  transform="translate(0, -50%)"
-                >
-                  <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-                    {card.title}
-                  </Heading>
-                  <Text fontSize={{ base: 'md', lg: 'lg' }} color="GrayText">
-                    {card.text}
-                  </Text>
-                </Stack>
-              </Container>
+            <Box>
+              <Heading
+                color="Black"
+                fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+              >
+                {card.title}
+              </Heading>
+              <Box
+                key={index}
+                height={'6xl'}
+                position="relative"
+                backgroundPosition="center"
+                backgroundRepeat="no-repeat"
+                backgroundSize="cover"
+                backgroundImage={`url(${card.image})`}
+              ></Box>
             </Box>
           ))}
         </Slider>

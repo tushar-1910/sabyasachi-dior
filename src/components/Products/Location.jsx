@@ -7,8 +7,9 @@ import {
   Heading,
 } from '@chakra-ui/react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import uv1 from './uv1.png';
-import uv2 from './uv2.png';
+import location1 from './location1.png';
+import location2 from './location2.png';
+import location3 from './location3.png';
 import background from '../background.png';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
@@ -37,9 +38,9 @@ export default function Location() {
 
   // These are the images used in the slide
   const cards = [
-    'https://images.unsplash.com/photo-1612852098516-55d01c75769a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-    'https://images.unsplash.com/photo-1627875764093-315831ac12f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-    'https://images.unsplash.com/photo-1571432248690-7fd6980a1ae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+    'https://i.pinimg.com/originals/b9/63/7d/b9637da93542aad8add2ddb413205f11.jpg',
+    'https://i.pinimg.com/564x/a7/c3/9d/a7c39de0686bc65f1ab69b4861e587e5.jpg',
+    location3,
   ];
   return (
     <Flex
@@ -59,7 +60,7 @@ export default function Location() {
         fontWeight={700}
         fontSize={useBreakpointValue({ base: '20px', md: '4xl' })}
       >
-        VICTORIA MEMORIAL, Kolkata, India
+        VICTORIA MEMORIAL, Kolkata
       </Heading>
       <Box
         position={'relative'}
@@ -110,11 +111,11 @@ export default function Location() {
         {/* Slider */}
         <Slider {...settings} ref={slider => setSlider(slider)}>
           {cards.map((url, index) => (
-            <Box
+            <Flex
               key={index}
-              height={'6xl'}
+              height={'500px'}
               position="relative"
-              backgroundPosition="center"
+              backgroundPosition="center center"
               backgroundRepeat="no-repeat"
               backgroundSize="cover"
               backgroundImage={`url(${url})`}

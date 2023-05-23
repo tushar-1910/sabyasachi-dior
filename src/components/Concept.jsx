@@ -5,7 +5,7 @@ import {
   Image,
   Text,
   Heading,
-  VStack,
+  Stack,
   useBreakpointValue,
 } from '@chakra-ui/react';
 import concept from './concept.png';
@@ -20,37 +20,19 @@ export default function Concept() {
       backgroundSize={'cover'}
       backgroundPosition={'center center'}
     >
-      <VStack
-        w={'full'}
-        justifyContent={'center'}
-        alignItems={'center'}
-        px={useBreakpointValue({ base: 4, md: 8 })}
-      >
-        <Flex
-          bg="rgba(0, 0, 0, 0.8)"
-          maxW="80%"
-          maxH="80%"
-          align={'flex-start'}
-          spacing={6}
-        >
-          <Image src={concept} boxSize={8} h="100%" w="30vw" mr={2} />
-
-          <Box>
-            <Heading
-              color="white"
-              textAlign={'center'}
-              mt={5}
-              fontWeight={700}
-              fontSize={useBreakpointValue({ base: '10px', md: '3xl' })}
-            >
-              CONCEPT
+      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+        <Flex p={8} flex={1} align={'center'} justify={'center'}>
+          <Stack spacing={6} w={'full'} maxW={'lg'}>
+            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+              <Text color={'Black.400'} as={'span'}>
+                Concept
+              </Text>
             </Heading>
             <Text
+              fontSize={{ base: 'md', lg: 'lg' }}
+              bg="rgba(0, 0, 0, 0.8)"
+              p={5}
               color={'white'}
-              p={useBreakpointValue({ base: 5, md: 10 })}
-              fontWeight={500}
-              lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: '10px', md: '2xl' })}
             >
               It sounds like a fascinating partnership between two fashion
               houses, Sabyasachi and Dior, with a focus on contemporary Indian
@@ -62,9 +44,9 @@ export default function Concept() {
               the refinement of Western tailoring with the grace of Indian
               materials and motifs may be a fascinating mix.
             </Text>
-          </Box>
+          </Stack>
         </Flex>
-      </VStack>
+      </Stack>
     </Flex>
   );
 }
