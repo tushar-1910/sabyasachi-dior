@@ -41,6 +41,12 @@ export default function Itinerary() {
   const cards = [
     {
       text: '',
+      title: 'Horse ride of the garden from valet to venue',
+      image:
+        'https://i.pinimg.com/564x/3e/a5/9d/3ea59d5b71a8670cd2481bcc169866d4.jpg',
+    },
+    {
+      text: '',
       title: 'Speech by Sabyasachi Mukherjee',
       image:
         'https://i.pinimg.com/564x/3e/a5/9d/3ea59d5b71a8670cd2481bcc169866d4.jpg',
@@ -48,6 +54,30 @@ export default function Itinerary() {
     {
       text: '',
       title: 'Christian Dior appearing as an AI',
+      image:
+        'https://i.pinimg.com/564x/b9/63/b0/b963b025de2e1a92ce3a87c2e256abf9.jpg',
+    },
+    {
+      text: '',
+      title: 'Fashion ramp walk for showcasing the collection',
+      image:
+        'https://i.pinimg.com/564x/b9/63/b0/b963b025de2e1a92ce3a87c2e256abf9.jpg',
+    },
+    {
+      text: '',
+      title: 'Installation',
+      image:
+        'https://i.pinimg.com/564x/b9/63/b0/b963b025de2e1a92ce3a87c2e256abf9.jpg',
+    },
+    {
+      text: '',
+      title: 'Guests embroidering on a sustainable cotton fabric',
+      image:
+        'https://i.pinimg.com/564x/b9/63/b0/b963b025de2e1a92ce3a87c2e256abf9.jpg',
+    },
+    {
+      text: '',
+      title: 'Inside tour of Victoria Memorial',
       image:
         'https://i.pinimg.com/564x/b9/63/b0/b963b025de2e1a92ce3a87c2e256abf9.jpg',
     },
@@ -64,7 +94,7 @@ export default function Itinerary() {
     >
       <Box
         position={'relative'}
-        height={'600px'}
+        height={'200px'}
         width={'80%'}
         overflow={'hidden'}
       >
@@ -109,23 +139,9 @@ export default function Itinerary() {
         {/* Slider */}
         <Slider {...settings} ref={slider => setSlider(slider)}>
           {cards.map((card, index) => (
-            <Box>
-              <Heading
-                color="Black"
-                fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-              >
-                {card.title}
-              </Heading>
-              <Box
-                key={index}
-                height={'6xl'}
-                position="relative"
-                backgroundPosition="center"
-                backgroundRepeat="no-repeat"
-                backgroundSize="cover"
-                backgroundImage={`url(${card.image})`}
-              ></Box>
-            </Box>
+            <Heading color="White" p={10} fontSize={'20px'} bg="rgb(0,0,0,0.8)">
+              {card.title}
+            </Heading>
           ))}
         </Slider>
       </Box>
